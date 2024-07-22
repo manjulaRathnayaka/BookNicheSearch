@@ -1,0 +1,17 @@
+apiVersion: core.choreo.dev/v1beta1
+kind: ComponentConfig
+spec:
+  outbound:
+    serviceReferences:
+    - name: choreo:///manjularathnayake/common-utility-services/goperf/803f0/v1/PUBLIC
+      connectionConfig: 01ef47df-a566-1518-a2c5-df7dc59e322b
+      env:
+      - from: ServiceURL
+        to: GO_CON_URL
+      - from: ConsumerKey
+        to: GO_CON_KEY
+      - from: ConsumerSecret
+        to: GO_CON_SECRET
+      - from: TokenURL
+        to: GO_CON_TOKEN_URL
+
